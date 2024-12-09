@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            background-image: url(images/chapel.jpg);
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #6200ea;
+            margin-bottom: 20px;
+        }
+
+        #prayer-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #6200ea;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #db857d;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #b32700;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="prayer" class="section">
+        <h2>Prayer Requests</h2>
+        <form id="prayer-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="prayer">Your Prayer Request:</label>
+            <textarea id="prayer" name="prayer" rows="4" required></textarea>
+
+            <button type="submit">Submit Prayer Request</button>
+        </form>
+    </section>
+    <script>
+        // Select the form element
+        const prayerForm = document.getElementById('prayer-form');
+    
+        // Add event listener to handle form submission
+        prayerForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert('Your prayer request has been submitted successfully!');
+            prayerForm.reset(); // Reset the form after submission
+            window.location.href = 'index.html'; // Redirect to the homepage (replace with your homepage URL)
+        });
+    </script>
+    
+</body>
+</html>

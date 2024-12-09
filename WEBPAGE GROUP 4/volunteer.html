@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-size: cover;
+            opacity: 0.8;
+            background-image: url(images/Sunday.jpg)
+
+        }
+
+        .section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        #signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus {
+            border-color: #0056b3;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="signup" class="signup section">
+        <h2>Sign Up to Join Us</h2>
+        <form id="signup-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="signup-email">Your Email:</label>
+            <input type="email" id="signup-email" name="signup-email" required>
+
+            <label for="interest">How would you like to get involved?</label>
+            <select id="interest" name="interest" required>
+                <option value="Worship Team">Worship Team</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Event Organizer">Event Organizer</option>
+            </select>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <script>
+        // Select the form element
+        const signupForm = document.getElementById('signup-form');
+
+        // Add event listener to handle form submission
+        signupForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert('Thank you for signing up! We look forward to having you join us.');
+            signupForm.reset(); // Reset the form after submission
+            window.location.href = 'index.html'; // Redirect to the homepage (replace with your homepage URL)
+        });
+    </script>
+</body>
+</html>

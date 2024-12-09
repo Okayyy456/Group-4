@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{ background:url(bg\ image.jpg); width:100vw; height:100vh; background-repeat: no-repeat;
+              background-position: center;
+              margin-right: 100px;
+              background-attachment:fixed;
+              background-size:cover;
+              background-color: #fcfcfc;
+              position: absolute;
+            }
+
+
+        table {
+            border-collapse: collapse; /* Remove gaps between cells */
+            border-radius: 10px;
+            font-family: Arial, sans-serif; /* Clean font */
+            background: #eedede; /* Light background color */
+            border: 1px solid #ddd; /* Subtle border */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+            margin-top: 29px;
+        }
+
+        /* Table headers */
+        th {
+            background: #f56a6a; /* Green background */
+            color: white; /* White text */
+            text-align: left; /* Left-align text */
+            padding: 12px; /* Add padding */
+            font-size: 18px; /* Slightly larger font */
+            
+        }
+
+        /* Table rows */
+        td {
+            font-size: 16px; /* Font size */
+            border-bottom: 1px solid #ddd; /* Add border between rows */
+            
+        }
+
+        /* Highlight alternate rows for readability */
+        tr:nth-child(even) {
+            background-color: #fcfcfc; /* Light gray background */
+        }
+
+        /* Hover effect for rows */
+        tr:hover {
+            background-color: #e6f7ff; /* Light blue on hover */
+        }
+
+        /* Link styles in table */
+        a {
+            color: #ff8c00; /* Blue color for links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+                
+        
+        #down:hover{position: relative; top: 20px; background:rgb(216, 137, 34)}
+        #up:hover{position: relative; bottom: 20px; background: rgb(216, 137, 34);}
+        nav { height:100%; float:left; width:17%;} 
+        li:hover{background:rgb(93, 95, 88)}
+        ul li{ margin-bottom:5px;}
+        ul{ list-style-type:none;} 
+        header{height: 10%; text-align: center; padding-top: 40px; font-size: 2rem; background-color:rgb(199, 72, 21);background: #fcf4f4;}
+        article{float: left; height: 100%; width: 70%; }
+        aside{float: left;width: 30%;height: 100%;}
+        .character{text-align:center;}
+        li a{text-decoration:none; }
+        li{margin:10px 0px; padding:10px 10px; background-color:rgba(173, 216, 230, 0.239); color: aliceblue;} 
+        li a{text-decoration: none; color:rgb(237, 237, 201);}
+        footer{position:fixed;bottom: 10px;left:800px; background-color: burlywood; width:100px;padding:1px;}
+        h3 {margin-top: 0; color:rgb(24,6,103);}
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>SCHEDULE</h3>
+    </header>
+    
+    <article class=""><iframe name="contentframe" src="Scheduled events.html" width="100%" height="100%" frameborder="0"></iframe></article>
+        <aside class="" overflow="auto">
+            <table height=100% cellpadding="15" >
+                <tr> 
+                    <th>EVENTS</th>
+                    <th>TIME</th>
+                    <th>LOCATION</th>
+                </tr>
+                <tr class="level1">
+                    <td><a href="Scheduled events.html#chapel" target="contentframe">Wednesday Chapel</a></td>
+                    <td>Every Wednesday at 4:00 pm - 5:15 pm</td>
+                    <td>ANH Auditorium</td>
+                </tr>
+                <tr class="level1">
+                    <td><a href="Scheduled events.html#service" target="contentframe">Sunday Service</a></td>
+                    <td>Every Sunday at 9:00 am - 11:00 am</td>
+                    <td>Hyoam Chapel</td>
+                </tr>
+                <tr class="level2">
+                    <td><a href="Scheduled events.html#thursday all-out" target="contentframe">Thursday All Out Worship</a></td>
+                    <td>Every Thursday at 7:30pm </td>
+                    <td>Hyoam Annex 3F</td>
+                </tr>
+                <tr class="level1">
+                    <td><a href="Scheduled events.html#thanksgiving" target="contentframe">Thanksgiving worship</a></td>
+                    <td>Monday 16th 9:00pm</td>
+                    <td>Koinonia, iHouse 4th Floor</td>
+                </tr>
+                <tr class="level3">
+                    <td><a href="Scheduled events.html#i-pray" target="contentframe">i-Pray</a></td>
+                    <td>Every Friday at 9:00 pm - 10:30 pm</td>
+                    <td>Kendrick Lounge</td>
+                </tr>
+                <tr class="level3"></tr>
+                    <td><a href="Scheduled events.html#umul" target="contentframe">Umul Worship</a></td>
+                    <td>Every Monday at 9:00 pm</td>
+                    <td>Koinonia, iHouse 4th Floor</td>
+                </tr>
+            </table>            
+        </aside>
+    </article>
+
+</body>
+</html>
